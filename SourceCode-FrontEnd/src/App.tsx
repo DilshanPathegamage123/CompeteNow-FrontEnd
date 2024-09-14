@@ -1,11 +1,14 @@
 import './App.css'
+import Footer from './Components/Footer/Footer'
+import NavBar from './Components/NavBar/NavBar'
 
 function App() {
  
 
   return (
     <>
-      <div className='text-5xl font-bold text-red-600'> Hello World</div>
+      <NavBar />
+      <Footer />
     </>
   )
 }
