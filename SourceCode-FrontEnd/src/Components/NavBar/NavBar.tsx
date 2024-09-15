@@ -6,13 +6,13 @@ function NavBar() {
     return (
         <div>
             <nav className="bg-white">
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-[120px] py-4">
                     <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                         <img src={ColorLogo} className="h-6" alt="CompeteNow Logo" />
                     </a>
-                    <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                        <button type="button" className="text-[--color-primary]  hover:bg-[--color-grey] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-4 mx-3 text-center dark:hover:[--color-primary] dark:focus:ring-blue-800">Sign up</button>
-                        <button type="button" className="text-white bg-[#7848F4] hover:bg-[--color-primary] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-4 mx-3 text-center dark:bg-[--color-secondary] dark:hover:[--color-primary] dark:focus:ring-blue-800">Sign in</button>
+                    <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ">
+                        <button type="button" className="text-[--color-primary]  hover:bg-[--color-grey] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-4 mx-3 text-center dark:hover:[--color-primary] dark:focus:ring-blue-800 transition-all duration-500">Sign up</button>
+                        <button type="button" className="text-white bg-[#7848F4] hover:bg-[--color-primary] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-4 mx-3 text-center dark:bg-[--color-secondary] dark:hover:[--color-primary] dark:focus:ring-blue-800 transition-all duration-500">Sign in</button>
 
                     </div>
                     {/* <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
