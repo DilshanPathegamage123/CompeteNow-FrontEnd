@@ -1,12 +1,16 @@
 import './App.css'
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import SignInPage from './components/auth/signInPage';
 
-function App() {
- 
-
+const App: React.FC = () => {
   return (
-    <>
-      <div className='text-5xl font-bold text-red-600'> Hello World</div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/home" element={<SignInPage />} />
+      </Routes>
+    </Router>
+
   )
 }
 
