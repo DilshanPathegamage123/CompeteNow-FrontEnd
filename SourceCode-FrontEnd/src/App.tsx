@@ -1,14 +1,11 @@
 import './App.css'
-import Footer from './Components/Footer/Footer'
-import NavBar from './Components/NavBar/NavBar'
-import HomePage from './Pages/HomePage/HomePage'  
 
 function App() {
  
 
   return (
     <>
-      <HomePage/>
+      <div className='text-5xl font-bold text-red-600'> Hello World</div>
     </>
   )
 }
