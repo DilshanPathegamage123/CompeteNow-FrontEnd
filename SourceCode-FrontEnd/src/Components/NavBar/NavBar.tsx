@@ -1,8 +1,18 @@
-import React from 'react'
+import React , { useState }  from 'react'
 import ColorLogo from '../../assets/Logos/Logo3.png'
 import './NavBar.css'
+import SignInPopUp from '../LoginPage/SignInPopUp'
+import SignUpPopUp from '../LogOutPage/SignUpPopUp'
 
 function NavBar() {
+
+    const [ isSignInPopUpOpen, setIsSignInPopUpOpen] = useState(false);
+    const [isSignUpPopUpOpen, setIsSignUpPopUpOpen] = useState(false);
+
+    const toggleSignInPopUp = () => setIsSignInPopUpOpen(!isSignInPopUpOpen);
+    const toggleSignUpPopUp = () => setIsSignUpPopUpOpen (!isSignUpPopUpOpen);
+
+
     return (
         <div>
             <nav className="bg-white">
@@ -11,8 +21,8 @@ function NavBar() {
                         <img src={ColorLogo} className="h-6" alt="CompeteNow Logo" />
                     </a>
                     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ">
-                        <button type="button" className="text-[--color-primary]  hover:bg-[--color-grey] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-4 mx-3 text-center dark:hover:[--color-primary] dark:focus:ring-blue-800 transition-all duration-500">Sign up</button>
-                        <button type="button" className="text-white bg-[#7848F4] hover:bg-[--color-primary] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-4 mx-3 text-center dark:bg-[--color-secondary] dark:hover:[--color-primary] dark:focus:ring-blue-800 transition-all duration-500">Sign in</button>
+                        <button type="button" onClick= {toggleSignUpPopUp} className="text-[--color-primary]  hover:bg-[--color-grey] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-4 mx-3 text-center dark:hover:[--color-primary] dark:focus:ring-blue-800 transition-all duration-500">Sign up</button>
+                        <button type="button" onClick={toggleSignInPopUp} className="text-white bg-[#7848F4] hover:bg-[--color-primary] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-4 mx-3 text-center dark:bg-[--color-secondary] dark:hover:[--color-primary] dark:focus:ring-blue-800 transition-all duration-500">Sign in</button>
 
                     </div>
                     {/* <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
@@ -33,6 +43,9 @@ function NavBar() {
                     </div> */}
                 </div>
             </nav>
+
+            {isSignUpPopUpOpen && <SignUpPopUp  onClose={toggleSignUpPopUp}/>}
+            {isSignInPopUpOpen && <SignInPopUp onClose={toggleSignInPopUp} />}
         </div>
     )
 }
