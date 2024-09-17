@@ -1,3 +1,4 @@
+
 import React , { useState }  from 'react'
 import ColorLogo from '../../assets/Logos/Logo3.png'
 import './NavBar.css'
@@ -24,6 +25,7 @@ function NavBar() {
                         <button type="button" onClick= {toggleSignUpPopUp} className="text-[--color-primary]  hover:bg-[--color-grey] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-4 mx-3 text-center dark:hover:[--color-primary] dark:focus:ring-blue-800 transition-all duration-500">Sign up</button>
                         <button type="button" onClick={toggleSignInPopUp} className="text-white bg-[#7848F4] hover:bg-[--color-primary] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-4 mx-3 text-center dark:bg-[--color-secondary] dark:hover:[--color-primary] dark:focus:ring-blue-800 transition-all duration-500">Sign in</button>
 
+
                     </div>
                     {/* <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
                         <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
@@ -44,8 +46,10 @@ function NavBar() {
                 </div>
             </nav>
 
+
             {isSignUpPopUpOpen && <SignUpPopUp  onClose={toggleSignUpPopUp}/>}
             {isSignInPopUpOpen && <SignInPopUp onClose={toggleSignInPopUp} />}
+
         </div>
     )
 }
