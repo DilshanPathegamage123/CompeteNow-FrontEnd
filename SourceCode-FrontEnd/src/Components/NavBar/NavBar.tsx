@@ -17,7 +17,7 @@ function NavBar() {
     return (
         <div>
             <nav className="bg-white">
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-[120px] py-4">
+                <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-[120px] py-4">
                     <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                         <img src={ColorLogo} className="h-6" alt="CompeteNow Logo" />
                     </a>
