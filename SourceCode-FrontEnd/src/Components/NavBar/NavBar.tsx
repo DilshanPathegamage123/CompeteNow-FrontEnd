@@ -2,8 +2,8 @@
 import React , { useState }  from 'react'
 import ColorLogo from '../../assets/Logos/Logo3.png'
 import './NavBar.css'
-import SignInPopUp from '../LoginPage/SignInPopUp'
-import SignUpPopUp from '../LogOutPage/SignUpPopUp'
+import SignInPopUp from '../../Pages/LoginPage/SignInPopUp'
+import SignUpPopUp from '../../Pages/LogOutPage/SignUpPopUp'
 
 function NavBar() {
 
