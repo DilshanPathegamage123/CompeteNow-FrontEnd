@@ -23,8 +23,8 @@ function HomePage() {
                         </p>
                         <button type="button" className="text-white bg-[#7848F4] hover:bg-[--color-primary] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-8 py-4 text-center  transition-all duration-500">More Info</button>
                     </div>
-                    <div>
-                        <img src={LandingPageImg} alt="" />
+                    <div className=''>
+                        <img src={LandingPageImg} alt=""/>
                     </div>
                 </div>
             </section>
@@ -104,7 +104,7 @@ function HomePage() {
                 </div>
             </section>
             <section>
-                <div className='grid md:grid-cols-2 mx-[60px] md:mx-[120px] bg-gradient-to-r from-[#040f62] to-[#26bce4] rounded-3xl my-10'>
+                <div className='grid lg:grid-cols-2 mx-[60px] md:mx-[120px] bg-gradient-to-r from-[#040f62] to-[#26bce4] rounded-3xl my-10'>
                     <div className='p-10'>
                         <h3 className='text-3xl font-extrabold text-white pt-10'>Why Choose CompeteNow?</h3>
                         <p className='text-sm text-white p-10'>CompleteNow enables event creators to effortlessly manage hackathon events, providing a platform to organize and showcase them. Users can easily explore and view upcoming and past hackathons, ensuring full visibility of all events.</p>
