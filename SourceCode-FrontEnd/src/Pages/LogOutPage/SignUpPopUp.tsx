@@ -13,3 +13,4 @@ const SignUpPopUp = ({onClose}: {onClose: () => void}) => {
 }
 
 export default SignUpPopUp
+
