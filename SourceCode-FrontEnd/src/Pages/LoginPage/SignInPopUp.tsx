@@ -8,11 +8,11 @@ import SignInBackImg2 from "../../assets/Images/SignIn Background Img2.png";
 const SignInPopUp = ({ onClose }: { onClose: () => void }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-10">
-      <div className="bg-white rounded-lg shadow-lg relative w-3/4 h-auto flex">
+      <div className="bg-white rounded-lg shadow-lg relative w-3/5 h-auto flex">
         {/* Left Part ///////////////////////////////////////////////// */}
         <div className="w-full md:w-3/5 column1 relative">
           <div className=" justify-center">
-            <img src={Logo3} alt="Logo3" className=" h-8 m-auto mt-10 mb-5" />
+            <img src={Logo3} alt="Logo3" className=" h-8 m-auto mt-10 mb-5 p-1" />
           </div>
           <button
             onClick={onClose}
@@ -48,14 +48,14 @@ const SignInPopUp = ({ onClose }: { onClose: () => void }) => {
             </button>
             <button
               type="submit"
-              className="w-1/4 p-2 bg-[#7848F4] hover:bg-blue-800 text-white rounded-lg mt-5"
+              className="w-auto p-2 bg-[#7848F4] hover:bg-blue-800 text-white rounded-lg mt-5 "
             >
               Sign In
             </button>
 
             <button
               type="button"
-              className="w-auto p-2 mb-8 border rounded-lg mt-8  flex items-center justify-center"
+              className="w-auto p-2 mb-8 border rounded-md mt-8  flex items-center justify-center  hover:bg-[#b4a8cf]"
             >
               <svg
                 className="w-5 h-5 mr-2"
@@ -117,7 +117,7 @@ const SignInPopUp = ({ onClose }: { onClose: () => void }) => {
           <div className=" flex justify-center mt-10">
             <button
               type="submit"
-              className="text-white bg-white hover:bg-slate-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-opacity-40"
+              className="text-white bg-[#ffffff] hover:bg-[#9387ad] font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-opacity-40"
               style={{ height: "42.5px" }}
             >
               Sign Up
