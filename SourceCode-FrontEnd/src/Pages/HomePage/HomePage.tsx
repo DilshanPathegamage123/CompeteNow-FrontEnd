@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../../Components/NavBar/NavBar'
-import LandingPageImg from '../../assets/Images/LandingPageImg.png'
+import LandingPageImg from '../../assets/Images/HomePageImg.png'
 import Gradient from '../../assets/Images/Gradient Fill 1.png'
 import HomePageImg2 from '../../assets/Images/HomePageImg2.png'
 import Footer from '../../Components/Footer/Footer'
@@ -23,8 +23,8 @@ function HomePage() {
                         </p>
                         <button type="button" className="text-white bg-[#7848F4] hover:bg-[--color-primary] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-8 py-4 text-center  transition-all duration-500">More Info</button>
                     </div>
-                    <div className=''>
-                        <img src={LandingPageImg} alt=""/>
+                    <div className='flex justify-center items-center'>
+                        <img src={LandingPageImg} alt="" className=''/>
                     </div>
                 </div>
             </section>
